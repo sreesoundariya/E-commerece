@@ -1,0 +1,74 @@
+/* ===== COMMON ===== */
+.bestdeal-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.bestdeal-slider {
+    width: 75%;
+}
+
+.deal-scroll {
+    overflow: hidden;
+}
+
+.deal-card {
+    min-width: 210px;
+    height: 280px;
+    background: #fff;
+}
+
+.deal-img-box {
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deal-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.deal-banner {
+    width: 25%;
+    padding-left: 60px;
+}
+
+.deal-banner img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* ===== MOBILE VIEW ===== */
+@media (max-width: 768px) {
+
+    /* hide airplane */
+    .deal-banner {
+        display: none;
+    }
+
+    /* full width */
+    .bestdeal-slider {
+        width: 100%;
+    }
+
+    /* hide arrows */
+    .deal-arrow {
+        display: none;
+    }
+
+    /* vertical list */
+    .deal-scroll {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .deal-card {
+        width: 100%;
+        min-width: 100%;
+    }
+}
